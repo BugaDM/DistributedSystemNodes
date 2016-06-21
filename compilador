@@ -1,0 +1,13 @@
+#!/bin/bash
+clear
+echo "COMPILANDO ANULACIONES:"
+gcc -o anulaciones anulaciones.c aux.c -g
+echo "COMPILANDO INICIAR:"
+gcc -o iniciar iniciar.c aux.c -g
+echo "COMPILANDO LECTORES:"
+gcc -o lectores lectores.c aux.c -g
+echo "COMPILANDO RECEPTOR:"
+gcc -o receptor receptor.c aux.c -g
+echo "COMPILANDO PAGO:"
+gcc -o pago pago.c aux.c -g
+echo "DONE."
